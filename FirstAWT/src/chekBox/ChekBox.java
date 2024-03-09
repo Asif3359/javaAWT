@@ -14,15 +14,23 @@ class chekBoxframe extends Frame implements ItemListener
 {
     Label l ;
     Checkbox c1 , c2 , c3 ;
+    CheckboxGroup cbg;
     
     public chekBoxframe()
     {
         super("Chek Box Demo");
         
         l = new Label("   Nothing Is Selected         ");
-        c1 = new Checkbox("Java");
-        c2 = new Checkbox("C#");
-        c3 = new Checkbox("C++");
+        
+        cbg = new CheckboxGroup();
+        
+        c1 = new Checkbox("Java",false,cbg);
+        c2 = new Checkbox("C#",false,cbg);
+        c3 = new Checkbox("C++",false,cbg);
+        
+        //c1 = new Checkbox("Java");
+        //c2 = new Checkbox("C#");
+        //c3 = new Checkbox("C++");
         
         c1.addItemListener(this);
         c2.addItemListener(this);
