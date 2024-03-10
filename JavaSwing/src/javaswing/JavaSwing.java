@@ -31,7 +31,7 @@ class MyFrame extends JFrame {
         tf3.setColumns(15);
         tf3.setValue(0);
 
-        JTextArea ta = new JTextArea(30, 30);
+        //JTextArea ta = new JTextArea(30, 30);
 
         setLayout(new FlowLayout());
         add(tf1);
